@@ -35,6 +35,18 @@ client.on('message', msg => {
     }else{
         msg.channel.send(`Send something mesmerizing`);
     }
+    
+    
+    if(msg.content == '.'){
+        if(client.on('message')){
+            do{
+                printf("what you wanna get?\n");
+                printf("1.Date right now");
+                printf("2.What rocket has been launched the last week");
+                printf("3.Exit");
+            }while(msg.content != '3');
+        };      
+    }
 
 
 });
